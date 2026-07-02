@@ -487,7 +487,8 @@ body::after {
 .divider::before {
   content: "◆";
   position: absolute;
-  left: 50%n  top: 50%;
+  left: 50%;
+  top: 50%;
   transform: translate(-50%, -50%);
   color: var(--cyan-primary);
   font-size: 1rem;
@@ -564,16 +565,25 @@ code {
 /* ===== 响应式 ===== */
 @media (max-width: 768px) {
   .hero-title { font-size: 2rem; }
-  .card-grid { grid-template-columns: 1fr; }
+  .card-grid { 
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+  }
   .nav-links { display: none; }
   .page-container { padding: 80px 1rem 2rem; }
   .section-title { font-size: 1.5rem; }
+  .card {
+    width: 100%;
+    min-height: 120px;
+    padding: 1.5rem;
+  }
 }
 
 /* ===== 淡入动画 ===== */
 .fade-in {
-  opacity: 0;
-  transform: translateY(30px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.8s ease, transform 0.8s ease;
 }
 
