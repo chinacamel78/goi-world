@@ -854,3 +854,54 @@ code {
     font-size: 0.85rem;
   }
 }
+
+/* ===== AI Art Section ===== */
+.ai-art-section {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: rgba(18, 24, 48, 0.6);
+  border: 1px solid var(--border-glow);
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.ai-art-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--cyan-primary), var(--purple-spirit), var(--gold-primary));
+  border-radius: 16px 16px 0 0;
+}
+
+.ai-art-image {
+  max-width: 100%;
+  border-radius: 12px;
+  border: 1px solid var(--border-glow);
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.1);
+  transition: all 0.4s ease;
+}
+
+.ai-art-image:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 40px rgba(0, 240, 255, 0.2);
+}
+
+.ai-art-section a[download] {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 20px;
+  background: rgba(0, 240, 255, 0.1);
+  color: var(--cyan-primary);
+  border: 1px solid var(--border-glow);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.ai-art-section a[download]:hover {
+  background: rgba(0, 240, 255, 0.2);
+  box-shadow: 0 0 15px var(--cyan-glow);
+}

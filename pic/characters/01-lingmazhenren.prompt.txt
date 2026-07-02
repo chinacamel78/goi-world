@@ -1,0 +1,8 @@
+Portrait of a cultivator character, cyber-xianxia style, glowing spirit aura, holographic data streams around body, traditional Chinese robes with circuit patterns, cyan and gold color palette, ethereal lighting, anime style, ultra detailed, 8k, character concept art
+
+Specific subject: 👑 灵码真人
+Context: 锦鲤宗宗主
+
+Enhanced details: 👑, 灵码真人, glowing with spiritual energy, intricate patterns, mysterious atmosphere, high quality, masterpiece
+
+--ar 16:9 --v 6 --style raw

@@ -1,0 +1,8 @@
+Dynamic visualization of algorithm magic, glowing energy lines forming data structures, ancient Chinese talisman merging with digital code, cyan and gold lightning effects, power burst, action scene, ultra detailed, 8k, special effects art
+
+Specific subject: ⚡ 《哈希灵瓮》
+Context: 功法 - 《哈希灵瓮》
+
+Enhanced details: ⚡, 《哈希灵瓮》, glowing with spiritual energy, intricate patterns, mysterious atmosphere, high quality, masterpiece
+
+--ar 16:9 --v 6 --style raw

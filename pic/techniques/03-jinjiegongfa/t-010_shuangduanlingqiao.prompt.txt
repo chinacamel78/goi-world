@@ -1,0 +1,8 @@
+Dynamic visualization of algorithm magic, glowing energy lines forming data structures, ancient Chinese talisman merging with digital code, cyan and gold lightning effects, power burst, action scene, ultra detailed, 8k, special effects art
+
+Specific subject: ⚡ 《双端灵桥》
+Context: 功法 - 《双端灵桥》
+
+Enhanced details: ⚡, 《双端灵桥》, glowing with spiritual energy, intricate patterns, mysterious atmosphere, high quality, masterpiece
+
+--ar 16:9 --v 6 --style raw
