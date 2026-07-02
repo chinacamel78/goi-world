@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>锦鲤界 — 锦鲤宗元宇宙</title>
+  <link rel="stylesheet" href="assets/css/koi-world.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- 粒子画布 -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- 锦鲤游动 -->
+  <div class="koi-swim"></div>
+  <div class="koi-swim"></div>
+  <div class="koi-swim"></div>
+
+  <!-- 导航栏 -->
+  <nav class="nav-bar">
+    <a href="index.html" class="nav-logo">
+      <span class="koi-icon">🎏</span>
+      <span>锦鲤界</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="world/index.html">世界观</a></li>
+      <li><a href="characters/index.html">人物</a></li>
+      <li><a href="locations/index.html">地点</a></li>
+      <li><a href="techniques/index.html">功法</a></li>
+      <li><a href="artifacts/index.html">法宝</a></li>
+      <li><a href="story/index.html">主线</a></li>
+      <li><a href="side-stories/index.html">支线</a></li>
+      <li><a href="philosophy/index.html">理念</a></li>
+    </ul>
+  </nav>
+
+  <!-- 页面容器 -->
+  <div class="page-container">
+
+    <!-- Hero 区域 -->
+    <section class="hero-section">
+      <h1 class="hero-title">🎏 锦鲤界</h1>
+      <p class="hero-subtitle">
+        欢迎来到锦鲤宗元宇宙——一个代码即功法、算法即修仙的奇幻世界。<br>
+        在这里，每一行正确的代码都是刺向迷茫的一剑，每一次算法的突破都是心灵的飞跃。
+      </p>
+      <div class="hero-meta">
+        <span class="meta-item"><span class="icon">⚔️</span> 两界战争</span>
+        <span class="meta-item"><span class="icon">🧬</span> 五脉灵根</span>
+        <span class="meta-item"><span class="icon">📜</span> 105套功法</span>
+        <span class="meta-item"><span class="icon">⚡</span> 45件法宝</span>
+        <span class="meta-item"><span class="icon">📖</span> 34章主线</span>
+      </div>
+    </section>
+
+    <!-- 世界地图导航 -->
+    <section class="section fade-in">
+      <h2 class="section-title">
+        <span class="icon">🗺️</span>
+        <span>锦鲤界总览</span>
+      </h2>
+      <div class="world-map" id="world-map">
+        <!-- 地图节点由JS生成 -->
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- 模块入口 -->
+    <section class="section fade-in">
+      <h2 class="section-title">
+        <span class="icon">📚</span>
+        <span>探索锦鲤界</span>
+      </h2>
+      <div class="card-grid">
+        <a href="world/index.html" class="card">
+          <div class="card-glow"></div>
+          <span class="card-icon">🌌</span>
+          <h3 class="card-title">世界观</h3>
+          <p class="card-desc">灵码界与两界战争的起源、宗门宗旨、核心冲突，以及天赋教养体系——五脉灵根、十二天赋灵纹、五道修炼法门。</p>
+          <span class="card-tag">两界战争</span>
+          <span class="card-tag">天赋体系</span>
+        </a>
+
+        <a href="characters/index.html" class="card">
+          <div class="card-glow"></div>
+          <span class="card-icon">👥</span>
+          <h3 class="card-title">人物志</h3>
+          <p class="card-desc">宗主灵码真人、六大长老、弟子代表（锦瑟、萧鲤、板栗师姐、口天师兄等）、反派势力（硅基首领"0"、堕渊者、暗黑鲤鱼帮）。</p>
+          <span class="card-tag">锦瑟 & 萧鲤</span>
+          <span class="card-tag">堕渊者</span>
+        </a>
+
+        <a href="locations/index.html" class="card">
+          <div class="card-glow"></div>
+          <span class="card-icon">🏯</span>
+          <h3 class="card-title">宗门地点</h3>
+          <p class="card-desc">锦鲤池、灵码头、藏经阁、魔法森林、传送阵、炼丹房、防御阵法、疗愈院、闭关洞府、天机阁、血脉堂、天道榜。</p>
+          <span class="card-tag">12大地点</span>
+          <span class="card-tag">灵根测试</span>
+        </a>
+
+        <a href="techniques/index.html" class="card">
+          <div class="card-glow"></div>
+          <span class="card-icon">⚡</span>
+          <h3 class="card-title">功法大典</h3>
+          <p class="card-desc">105套功法，按基础(J)/进阶(T)/高阶(N)三级分类。每套功法对应一种算法，含心法口诀、战争应用、修炼方法。</p>
+          <span class="card-tag">105套功法</span>
+          <span class="card-tag">算法映射</span>
+        </a>
+
+        <a href="artifacts/index.html" class="card">
+          <div class="card-glow"></div>
+          <span class="card-icon">🔮</span>
+          <h3 class="card-title">法宝图鉴</h3>
+          <p class="card-desc">45件法宝，按基础(A)/进阶(B)/高阶(C)三级分类。每件法宝对应一种数据结构，含外观、传说、功能、战争应用。</p>
+          <span class="card-tag">45件法宝</span>
+          <span class="card-tag">数据结构</span>
+        </a>
+
+        <a href="story/index.html" class="card">
+          <div class="card-glow"></div>
+          <span class="card-icon">📖</span>
+          <h3 class="card-title">主线剧情</h3>
+          <p class="card-desc">双主角锦瑟（女）与萧鲤（男）的八年修仙之路——从入宗到IOI至尊，八阶段34章，含5个特别情节与同名镜像线。</p>
+          <span class="card-tag">34章</span>
+          <span class="card-tag">双主角</span>
+        </a>
+
+        <a href="side-stories/index.html" class="card">
+          <div class="card-glow"></div>
+          <span class="card-icon">🔍</span>
+          <h3 class="card-title">支线剧情</h3>
+          <p class="card-desc">24道历史题目改编为独立任务，每个任务对应主线中的一个阶段，展现锦瑟与萧鲤在不同情境下的修炼与成长。</p>
+          <span class="card-tag">24道题目</span>
+          <span class="card-tag">历史任务</span>
+        </a>
+
+        <a href="philosophy/index.html" class="card">
+          <div class="card-glow"></div>
+          <span class="card-icon">🧠</span>
+          <h3 class="card-title">教学理念</h3>
+          <p class="card-desc">祖传原理图、乾坤大挪移、降维打击，以及现代学习方法映射（费曼法、PBL、翻转课堂、五道修炼法门等）。</p>
+          <span class="card-tag">教学理念</span>
+          <span class="card-tag">现代映射</span>
+        </a>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- 双主角介绍 -->
+    <section class="section fade-in">
+      <h2 class="section-title">
+        <span class="icon">🎭</span>
+        <span>双主角：锦瑟 & 萧鲤</span>
+      </h2>
+      <div class="card-grid" style="grid-template-columns: repeat(2, 1fr);">
+        <div class="card" style="cursor: default;">
+          <div class="card-glow"></div>
+          <span class="card-icon" style="font-size: 4rem;">👩‍💻</span>
+          <h3 class="card-title" style="color: var(--gold-primary);">锦瑟</h3>
+          <p class="card-desc">
+            <strong>规律灵根（金色）· 生产型</strong><br>
+            系统思维者，喜欢制定计划、守时、注重效率。代表功法《化繁为简诀》（降维打击）。<br>
+            <em>"锦瑟无端五十弦，一弦一柱思华年。"</em>
+          </p>
+          <span class="card-tag">系统思维</span>
+          <span class="card-tag">规律灵根</span>
+          <span class="card-tag">笔记法</span>
+        </div>
+        <div class="card" style="cursor: default;">
+          <div class="card-glow"></div>
+          <span class="card-icon" style="font-size: 4rem;">👨‍💻</span>
+          <h3 class="card-title" style="color: var(--cyan-primary);">萧鲤</h3>
+          <p class="card-desc">
+            <strong>玄思灵根（青色）· 思考/创造型</strong><br>
+            创造性思维者，抽象思维强、想象力丰富。代表功法《时频转生咒》（FFT）。<br>
+            <em>"鲤鱼跃龙门，一跃入青云。"</em>
+          </p>
+          <span class="card-tag">创造性思维</span>
+          <span class="card-tag">玄思灵根</span>
+          <span class="card-tag">观想法</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- 核心理念 -->
+    <section class="section fade-in">
+      <h2 class="section-title">
+        <span class="icon">💎</span>
+        <span>宗门核心理念</span>
+      </h2>
+      <div class="quote-block">
+        锦鲤不是天生好运，而是底层思考带来的必然。每一行正确的代码，都是刺向迷茫的一剑。
+      </div>
+      <div class="card-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="card" style="cursor: default;">
+          <div class="card-glow"></div>
+          <span class="card-icon">🌱</span>
+          <h3 class="card-title">培养优于筛选</h3>
+          <p class="card-desc">每个人都有适合自己的路径，不是只有天才才能成功。</p>
+        </div>
+        <div class="card" style="cursor: default;">
+          <div class="card-glow"></div>
+          <span class="card-icon">🛤️</span>
+          <h3 class="card-title">过程重于结果</h3>
+          <p class="card-desc">修炼过程中的收获，比拿奖更有价值。</p>
+        </div>
+        <div class="card" style="cursor: default;">
+          <div class="card-glow"></div>
+          <span class="card-icon">🤝</span>
+          <h3 class="card-title">合作优于竞争</h3>
+          <p class="card-desc">团队协作与互补成长，才是修仙之道。</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <!-- 版本信息 -->
+    <section class="section fade-in" style="text-align: center; padding: 2rem;">
+      <p style="color: var(--text-muted); font-size: 0.9rem;">
+        锦鲤宗元宇宙 IP · v1.3 · 赛博修仙风格<br>
+        <span style="font-family: var(--font-mono);">Code = Cultivation · Algorithm = Immortality</span>
+      </p>
+    </section>
+
+  </div>
+
+  <script src="assets/js/koi-world.js"></script>
+  <script>
+    // 生成世界地图节点
+    document.addEventListener('DOMContentLoaded', () => {
+      const map = document.getElementById('world-map');
+      if (!map) return;
+
+      const nodes = [
+        { id: 'world', name: '世界观', icon: '🌌', x: 50, y: 15, href: 'world/index.html' },
+        { id: 'characters', name: '人物', icon: '👥', x: 20, y: 40, href: 'characters/index.html' },
+        { id: 'locations', name: '地点', icon: '🏯', x: 80, y: 40, href: 'locations/index.html' },
+        { id: 'techniques', name: '功法', icon: '⚡', x: 20, y: 70, href: 'techniques/index.html' },
+        { id: 'artifacts', name: '法宝', icon: '🔮', x: 80, y: 70, href: 'artifacts/index.html' },
+        { id: 'story', name: '主线', icon: '📖', x: 50, y: 50, href: 'story/index.html' },
+        { id: 'side', name: '支线', icon: '🔍', x: 50, y: 80, href: 'side-stories/index.html' },
+      ];
+
+      const links = [
+        ['world', 'story'], ['world', 'characters'], ['world', 'locations'],
+        ['characters', 'story'], ['locations', 'story'],
+        ['techniques', 'story'], ['artifacts', 'story'],
+        ['story', 'side']
+      ];
+
+      // 绘制连接线
+      links.forEach(([from, to]) => {
+        const n1 = nodes.find(n => n.id === from);
+        const n2 = nodes.find(n => n.id === to);
+        if (!n1 || !n2) return;
+
+        const link = document.createElement('div');
+        link.className = 'map-link pulse';
+        const dx = n2.x - n1.x;
+        const dy = n2.y - n1.y;
+        const length = Math.sqrt(dx * dx + dy * dy);
+        const angle = Math.atan2(dy, dx) * 180 / Math.PI;
+
+        link.style.cssText = `
+          left: ${n1.x}%; top: ${n1.y}%; width: ${length * 0.6}%;
+          transform: rotate(${angle}deg);
+        `;
+        map.appendChild(link);
+      });
+
+      // 绘制节点
+      nodes.forEach(node => {
+        const el = document.createElement('a');
+        el.className = 'map-node';
+        el.href = node.href;
+        el.style.left = `calc(${node.x}% - 30px)`;
+        el.style.top = `calc(${node.y}% - 30px)`;
+        el.innerHTML = `<span class="node-icon">${node.icon}</span><span>${node.name}</span>`;
+        map.appendChild(el);
+      });
+    });
+  </script>
+</body>
+</html>

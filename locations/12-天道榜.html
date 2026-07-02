@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>天道榜 — 锦鲤界</title>
+  <link rel="stylesheet" href="../assets/css/koi-world.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="particles-canvas"></canvas>
+  <div class="koi-swim"></div>
+  <div class="koi-swim"></div>
+  <div class="koi-swim"></div>
+
+  <nav class="nav-bar">
+    <a href="../index.html" class="nav-logo">
+      <span class="koi-icon">🎏</span>
+      <span>锦鲤界</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../world/index.html">世界观</a></li>
+      <li><a href="../characters/index.html">人物</a></li>
+      <li><a href="../locations/index.html">地点</a></li>
+      <li><a href="../techniques/index.html">功法</a></li>
+      <li><a href="../artifacts/index.html">法宝</a></li>
+      <li><a href="../story/index.html">主线</a></li>
+      <li><a href="../side-stories/index.html">支线</a></li>
+      <li><a href="../philosophy/index.html">理念</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-container">
+    <div class="breadcrumb">
+      <a href="../index.html">🎏 锦鲤界</a>
+      <span class="separator">›</span>
+      <a href="locations/index.html">地点</a> <span class="separator">›</span>
+      <span class="current">天道榜</span>
+    </div>
+
+    <section class="hero-section">
+      <h1 class="hero-title">📊 天道榜</h1>
+      <p class="hero-subtitle">弟子排名</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="section fade-in">
+      <div class="content-body">
+<h1>天道榜</h1>
+
+<blockquote><strong>文档定位</strong>：宗门地点详细档案</blockquote>
+<blockquote><strong>版本</strong>：v1.2</blockquote>
+<blockquote><strong>关联文件</strong>：`../01-世界观总纲.md`</blockquote>
+
+<p>---</p>
+
+<h2>一、地点信息</h2>
+
+<table class="data-table">
+<tr><td>属性</td><td>内容</td></tr>
+<tr><td><strong>地点名称</strong></td><td>天道榜</td></tr>
+<tr><td><strong>地点级别</strong></td><td>宗门核心设施</td></tr>
+<tr><td><strong>功能定位</strong></td><td>弟子排名展示、修炼数据统计、竞争激励系统</td></tr>
+<tr><td><strong>关联势力</strong></td><td>锦鲤宗（正派）</td></tr>
+</table>
+
+<p>---</p>
+
+<h2>二、地理描述</h2>
+
+<p>天道榜位于锦鲤宗主峰广场东侧，是一座高耸入云的"数据碑林"。整座建筑由三千六百块"灵识石碑"组成，每一块石碑对应一名弟子，石碑的高度代表该弟子的"当前境界"，石碑的光芒颜色代表其"灵根属性"。</p>
+
+<p>碑林中央是一座"主榜碑"——一块高达百丈的巨型石碑，上面实时显示着宗门弟子的各项排名：</p>
+
+<p>- <strong>总榜</strong>：综合实力的总体排名
+- <strong>功法榜</strong>：各套功法的掌握程度排名
+- <strong>法宝榜</strong>：法宝运用熟练度排名
+- <strong>协作榜</strong>：团队任务贡献度排名
+- <strong>进步榜</strong>：近期进步幅度排名</p>
+
+<p>碑林上空悬浮着无数"数据流"——这些是弟子们的"修炼数据可视化"，如同星河般流动。</p>
+
+<p>---</p>
+
+<h2>三、功能与作用</h2>
+
+<h3>3.1 弟子排名展示</h3>
+
+<p>天道榜最核心的功能是"实时排名展示"。每个弟子的排名不是固定的，而是根据以下指标动态计算：</p>
+
+<table class="data-table">
+<tr><td>指标</td><td>权重</td><td>说明</td></tr>
+<tr><td>算法功力</td><td>30%</td><td>功法修炼的熟练度</td></tr>
+<tr><td>实战成绩</td><td>25%</td><td>比赛和任务的完成情况</td></tr>
+<tr><td>团队协作</td><td>20%</td><td>团队任务中的贡献度</td></tr>
+<tr><td>进步幅度</td><td>15%</td><td>近期修炼的进步速度</td></tr>
+<tr><td>创新指数</td><td>10%</td><td>创造新功法或新思路的贡献</td></tr>
+</table>
+
+<h3>3.2 修炼数据统计</h3>
+
+<p>天道榜不仅展示排名，还提供详细的"修炼数据统计"：</p>
+
+<p>- <strong>时间分布</strong>：弟子在各类功法上的修炼时间分配
+- <strong>错误分析</strong>：弟子常犯的错误类型及频率
+- <strong>能力雷达图</strong>：弟子在逻辑、创造、协作、速度、稳定五个维度的能力分布
+- <strong>成长曲线</strong>：弟子从入门到当前的境界变化轨迹</p>
+
+<p>这些数据对弟子本人、长老和家长都是透明的。弟子可以通过数据了解自己的"短板"，长老可以通过数据制定"个性化培养方案"，家长可以通过数据了解弟子的"成长进度"。</p>
+
+<h3>3.3 竞争激励系统</h3>
+
+<p>天道榜的"竞争激励系统"是宗门培养弟子"内驱力"的重要手段：</p>
+
+<p>- <strong>周榜挑战</strong>：每周公布"进步榜"前十名，上榜弟子可获得"修炼资源加成"
+- <strong>跨级挑战</strong>：低境界弟子可以"挑战"高境界弟子，挑战成功可直接晋升
+- <strong>团队赛榜</strong>：团队任务的排名，促进弟子之间的协作
+- <strong>历史纪录</strong>：记录宗门历史上的"最高纪录"，激励后来者突破</p>
+
+<p>但宗主特别强调："天道榜的目的不是'制造焦虑'，而是'激发潜能'。如果一个弟子看到排名后感到的是'绝望'而不是'动力'，那说明这个弟子的'成长型思维'还需要培养。"</p>
+
+<p>---</p>
+
+<h2>四、传说典故</h2>
+
+<h3>4.1 上古传说</h3>
+
+<p>天道榜的建造者是锦鲤宗第十代宗主"数据真人"。他是一位"数据狂热者"，相信"一切皆可量化"。他穷其一生，收集了宗门历代弟子的"修炼数据"，最终以这些数据为基础，建造了天道榜。</p>
+
+<p>"数据不会说谎，"数据真人说，"但数据也不会说话。天道榜的作用，是让数据'说话'——告诉弟子，他们在哪里，他们可以去哪里。"</p>
+
+<p>传说数据真人临终前，将毕生修为注入"主榜碑"，使得天道榜拥有了一丝"预知能力"——能根据弟子的当前数据，预测其"未来成就概率"。但这种能力极不稳定，偶尔会出现"荒谬的预测"（比如预测一个外门弟子未来会成为宗主），因此仅供"参考"。</p>
+
+<h3>4.2 锦瑟的逆袭</h3>
+
+<p>锦瑟（萧鲤）在天道榜上有一段"逆袭传奇"。</p>
+
+<p>她入门时，天道榜显示她的"预测成就概率"只有12%——在所有新弟子中排名倒数第三。这个预测的依据是：她的"入门年龄"偏大（比同龄弟子晚一年），"基础测试"成绩普通，且"灵根属性"与堕渊者相同（被系统标记为"高风险"）。</p>
+
+<p>但锦瑟没有因此沮丧。她每天在天道榜前记录自己的"数据变化"，分析自己的"短板"，然后有针对性地修炼。三个月后，她的"进步榜"排名从第89名上升到第5名。六个月后，她的"总榜"排名进入前20。</p>
+
+<p>一年后，天道榜的"预测系统"自动更新了锦瑟的"未来成就概率"——从12%上升到78%。这是天道榜历史上最大的"预测修正"。</p>
+
+<p>数据长老在宗门大会上感慨："锦瑟的故事告诉我们，天道榜的数据是'起点'，不是'终点'。数据可以预测'概率'，但无法预测'意志'。"</p>
+
+<h3>4.3 萧鲤的"波动"</h3>
+
+<p>萧鲤在天道榜上的表现则充满了"波动"。</p>
+
+<p>她的"创新指数"常年位居榜首，但"稳定指数"却经常垫底。她可以在某一周因为"创造了一套新解法"而跃居总榜前十，也可以在下一周因为"忽视了基础测试"而跌出前五十。</p>
+
+<p>这种"波动"让她的"预测成就概率"始终不稳定——在30%到65%之间剧烈震荡。</p>
+
+<p>冯长老曾对她说："你的'上限'很高，但'下限'也很低。天道榜的数据提醒你：你需要'稳定'你的输出。创造力是天赋，但'稳定输出'是修炼。"</p>
+
+<p>萧鲤后来学会了用"系统思维"（从锦瑟那里学来的）来"稳定"自己的输出。她的"波动幅度"逐渐减小，"预测成就概率"最终稳定在80%以上。</p>
+
+<h3>4.4 堕渊者的"断层"</h3>
+
+<p>堕渊者（暗黑锦鲤）在天道榜的历史记录中，有一段"诡异的数据断层"。</p>
+
+<p>她入门时，所有指标都是"顶尖"——总榜第一、功法榜第一、创新榜第一。她的"预测成就概率"高达95%，是宗门历史上最高的。</p>
+
+<p>但在她叛出前三个月，天道榜的数据开始出现"异常"：
+- 她的"团队协作"指标突然归零
+- 她的"错误分析"中出现了大量"自我矛盾"的记录
+- 她的"修炼时间分布"显示她"深夜修炼"时间急剧增加</p>
+
+<p>这些数据异常被当时的长老会忽视了——他们认为这是"高强度修炼"的正常表现。直到堕渊者叛出后，数据长老才意识到：天道榜的"数据"已经发出了警告，但没有人"读懂"这些警告。</p>
+
+<p>这次事件后，天道榜增加了"风险预警系统"——当弟子的数据出现"异常模式"时，会自动向长老会和疗愈院发出警报。</p>
+
+<p>---</p>
+
+<h2>五、AI生成提示词</h2>
+
+<pre><code>A towering data monument forest with thousands of glowing stone tablets, each tablet representing a disciple with different heights and colors, a massive central monument displaying real-time rankings, holographic data streams flowing like rivers in the sky above, radar charts and growth curves floating around the tablets, traditional Chinese cultivation aesthetics merged with big data visualization, cyan-blue and gold color palette, highly detailed, 8k, concept art
+</code></pre>
+
+<p>---</p>
+
+<blockquote><strong>关联阅读</strong>：</blockquote>
+<blockquote>- `../01-世界观总纲.md` — 世界观总览</blockquote>
+<blockquote>- `../11-血脉堂.md` — 家庭教育枢纽</blockquote>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="section fade-in" style="text-align: center; padding: 2rem;">
+      <p style="color: var(--text-muted); font-size: 0.9rem;">
+        <a href="../index.html" style="color: var(--cyan-primary); text-decoration: none;">← 返回锦鲤界总览</a>
+      </p>
+    </section>
+  </div>
+
+  <script src="../assets/js/koi-world.js"></script>
+</body>
+</html>

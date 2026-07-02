@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>乾坤大挪移 — 锦鲤界</title>
+  <link rel="stylesheet" href="../assets/css/koi-world.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="particles-canvas"></canvas>
+  <div class="koi-swim"></div>
+  <div class="koi-swim"></div>
+  <div class="koi-swim"></div>
+
+  <nav class="nav-bar">
+    <a href="../index.html" class="nav-logo">
+      <span class="koi-icon">🎏</span>
+      <span>锦鲤界</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="../world/index.html">世界观</a></li>
+      <li><a href="../characters/index.html">人物</a></li>
+      <li><a href="../locations/index.html">地点</a></li>
+      <li><a href="../techniques/index.html">功法</a></li>
+      <li><a href="../artifacts/index.html">法宝</a></li>
+      <li><a href="../story/index.html">主线</a></li>
+      <li><a href="../side-stories/index.html">支线</a></li>
+      <li><a href="../philosophy/index.html">理念</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-container">
+    <div class="breadcrumb">
+      <a href="../index.html">🎏 锦鲤界</a>
+      <span class="separator">›</span>
+      <a href="philosophy/index.html">理念</a> <span class="separator">›</span>
+      <span class="current">乾坤大挪移</span>
+    </div>
+
+    <section class="hero-section">
+      <h1 class="hero-title">⚖️ 乾坤大挪移</h1>
+      <p class="hero-subtitle">时空权衡</p>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="section fade-in">
+      <div class="content-body">
+<h1>乾坤大挪移</h1>
+
+<blockquote><strong>文档定位</strong>：教学理念核心文档，描述锦鲤宗基础班的核心心法。</blockquote>
+<blockquote><strong>版本</strong>：v1.2</blockquote>
+<blockquote><strong>本质</strong>：空间与时间的互相转化（计算机中的时空权衡）</blockquote>
+<blockquote><strong>具体说明</strong>：函数 vs 数组——同样的计算，可以用数组做映射（空间换时间），也可以用函数实现（时间换空间）</blockquote>
+<blockquote><strong>关联文件</strong>：`../01-祖传原理图.md`、`../03-降维打击.md`</blockquote>
+
+<p>---</p>
+
+<h2>一、起源与传说</h2>
+
+<h3>1.1 传说</h3>
+
+<p>相传，在灵码界的远古时期，有一位名为"乾坤道人"的散修。他发现自己的"灵力"（算力）和"神识空间"（内存）总是不够用。一次偶然的机会，他顿悟了一个道理：</p>
+
+<blockquote>"天地万物，乾坤有序。空间与时间，本是一体两面。用空间换时间，如以地换天；用时间换空间，如以天换地。"</blockquote>
+
+<p>他创制了这门"乾坤大挪移"心法，可以在修炼时自由调配"空间资源"和"时间资源"，从此在灵码界中无往不利。</p>
+
+<h3>1.2 为什么叫"乾坤大挪移"</h3>
+
+<p>- <strong>乾坤</strong>：代表空间（地）和时间（天）
+- <strong>大挪移</strong>：代表将资源从一种形式"挪移"到另一种形式
+- 在武侠中，乾坤大挪移是移花接玉、借力打力的功夫；在算法中，是空间换时间、时间换空间的权衡</p>
+
+<p>---</p>
+
+<h2>二、核心原理：时空权衡</h2>
+
+<h3>2.1 空间换时间</h3>
+
+<strong>本质</strong>：用更多的内存空间（存储预计算结果）来换取更快的运行速度（避免重复计算）
+
+<strong>修仙映射</strong>：
+- 在修炼时，提前将"灵气"（数据）存储在"丹田"（内存）中的各个"穴位"（数组索引）里
+- 当需要使用时，直接从"穴位"中调取，无需重新"炼化"（计算）
+- 代价：需要更大的"丹田"（更多内存空间）
+
+<strong>算法示例</strong>：
+- 记忆化搜索（Memoization）：将递归结果存储在数组中，避免重复计算
+- 动态规划：将子问题的解存储在DP表中，后续直接使用
+- 前缀和：预先计算前缀和数组，O(1)回答区间查询
+- 查表法：预先计算所有可能结果，查询时直接查表
+
+<strong>口诀</strong>："以地换天，预存灵气，调用如风。"
+
+<h3>2.2 时间换空间</h3>
+
+<strong>本质</strong>：用更少的内存空间（不存储预计算结果）来换取更快的运行速度？不，是用更慢的运行速度来换取更少的内存空间。
+
+<strong>修仙映射</strong>：
+- 在修炼时，不预先存储"灵气"，而是每次需要时重新"炼化"（计算）
+- 代价：每次都需要重新"炼化"，速度较慢
+- 优势：不需要占用"丹田"空间（内存）
+
+<strong>算法示例</strong>：
+- 递归（不记忆化）：每次重新计算，空间占用少（仅递归栈）
+- 函数计算：用函数实时计算结果，而非存储数组
+- 压缩存储：用位运算压缩数据，减少空间但增加计算时间
+
+<strong>口诀</strong>："以天换地，实时炼化，空间自留。"
+
+<h3>2.3 函数 vs 数组</h3>
+
+<strong>核心对比</strong>：
+
+<table class="data-table">
+<tr><td>维度</td><td>数组（空间换时间）</td><td>函数（时间换空间）</td></tr>
+<tr><td>存储</td><td>预计算结果存储在数组中</td><td>不存储，实时计算</td></tr>
+<tr><td>查询速度</td><td>O(1)</td><td>O(计算复杂度)</td></tr>
+<tr><td>空间占用</td><td>O(n)或更高</td><td>O(1)</td></tr>
+<tr><td>适用场景</td><td>查询频繁、空间充裕</td><td>空间受限、查询不频繁</td></tr>
+<tr><td>修仙比喻</td><td>预先在丹田中开辟穴位存储灵气</td><td>每次需要时重新运功炼化</td></tr>
+</table>
+
+<strong>经典例子</strong>：斐波那契数列
+- 数组法：预先计算fib[0..n]存储在数组中，查询O(1)
+- 函数法：用递归函数实时计算，不存储中间结果
+
+<p>---</p>
+
+<h2>三、修炼方法</h2>
+
+<h3>3.1 入门：识别时空场景</h3>
+
+<p>- 弟子首先需要学会"识别场景"：什么时候应该"空间换时间"？什么时候应该"时间换空间"？
+- 关键判断因素：
+  1. 查询频率：查询多 → 空间换时间；查询少 → 时间换空间
+  2. 空间限制：空间充裕 → 空间换时间；空间紧张 → 时间换空间
+  3. 时间限制：时间紧张 → 空间换时间；时间充裕 → 时间换空间</p>
+
+<h3>3.2 进阶：灵活运用</h3>
+
+<p>- 在实战中，往往不是单纯的"空间换时间"或"时间换空间"，而是"混合策略"
+- 例如：部分预计算（只预计算关键结果）+ 部分实时计算
+- 弟子需要学会在"空间"和"时间"之间找到"最优平衡点"</p>
+
+<h3>3.3 高阶：乾坤合一</h3>
+
+<p>- 最高境界：不刻意区分"空间"和"时间"，而是将两者视为统一的资源池
+- 根据题境（题目）的约束条件，自动选择最优的资源分配策略
+- 这就是"乾坤合一"——无招胜有招</p>
+
+<p>---</p>
+
+<h2>四、修仙包装：时空转换心法</h2>
+
+<h3>4.1 功法名称</h3>
+
+<p>- <strong>正式名称</strong>：《乾坤大挪移》
+- <strong>别名</strong>：时空转换心法、灵气调配术、丹田炼化诀</p>
+
+<h3>4.2 功法描述</h3>
+
+<blockquote>修炼此心法者，可自由调配体内"空间"与"时间"两种资源。空间如丹田之广，时间如炼化之速。以广换速，则调用如风；以速换广，则空间自留。乾坤合一，无招胜有招。</blockquote>
+
+<h3>4.3 心法口诀</h3>
+
+<pre><code>空间换时间，预存灵气在丹田。
+时间换空间，实时炼化不预留。
+乾坤本一体，调配看场景。
+广则速之，速则广之，合一乃大成。
+</code></pre>
+
+<p>---</p>
+
+<h2>五、与两界战争的关联</h2>
+
+<p>- <strong>硅基人陷阱</strong>：硅基人常常设置"时空陷阱"——给弟子充足的空间但时间紧迫，或者给弟子充足的时间但空间受限。掌握乾坤大挪移的弟子，可以灵活应对这些陷阱
+- <strong>资源战</strong>：在战争中，资源（算力和内存）总是有限的。掌握时空权衡的弟子，能在资源受限的环境下找到最优解</p>
+
+<p>---</p>
+
+<h2>六、AI生成提示词</h2>
+
+<pre><code>A mystical cultivation manual depicting the "Qiankun Great Shift" technique, showing a cultivator's body with a glowing dantian (丹田) representing memory space and flowing meridians representing time/execution paths, visual metaphors of space-time tradeoff: on one side a vast storage array with pre-computed glowing data points, on the other side a single function formula emitting real-time calculation waves, the cultivator balancing both energies in his hands, traditional Chinese yin-yang symbolism merged with algorithmic complexity concepts, cyan-blue and gold energy streams, highly detailed, 8k, concept art
+</code></pre>
+
+<p>---</p>
+
+<blockquote><strong>关联阅读</strong>：</blockquote>
+<blockquote>- `../01-祖传原理图.md` — 内视心法（基础）</blockquote>
+<blockquote>- `../03-降维打击.md` — 化繁为简心法（进阶）</blockquote>
+<blockquote>- `../../04-功法/01-功法大典总纲.md` — 功法体系总览</blockquote>
+      </div>
+    </section>
+
+    <div class="divider"></div>
+
+    <section class="section fade-in" style="text-align: center; padding: 2rem;">
+      <p style="color: var(--text-muted); font-size: 0.9rem;">
+        <a href="../index.html" style="color: var(--cyan-primary); text-decoration: none;">← 返回锦鲤界总览</a>
+      </p>
+    </section>
+  </div>
+
+  <script src="../assets/js/koi-world.js"></script>
+</body>
+</html>
