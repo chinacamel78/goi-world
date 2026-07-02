@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T496361 列队 — 锦鲤界</title>
+  <link rel="stylesheet" href="../assets/css/koi-world.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="particles-canvas"></canvas>
+  <div class="koi-swim"></div><div class="koi-swim"></div><div class="koi-swim"></div>
+  <nav class="nav-bar">
+    <a href="../index.html" class="nav-logo"><span class="koi-icon">🎏</span><span>锦鲤界</span></a>
+    <ul class="nav-links">
+      <li><a href="../world/index.html">世界观</a></li>
+      <li><a href="../characters/index.html">人物</a></li>
+      <li><a href="../locations/index.html">地点</a></li>
+      <li><a href="../techniques/index.html">功法</a></li>
+      <li><a href="../artifacts/index.html">法宝</a></li>
+      <li><a href="../story/index.html">主线</a></li>
+      <li><a href="../side-stories/index.html">支线</a></li>
+      <li><a href="../philosophy/index.html">理念</a></li>
+    </ul>
+  </nav>
+  <div class="page-container">
+    <div class="breadcrumb"><a href="../index.html">锦鲤界</a> <span class="separator">/</span> <a href="zhixianjuqing-index.html">支线剧情</a> <span class="separator">/</span> <span class="current">T496361 列队</span></div>
+    <section class="hero-section"><h1 class="hero-title">🔍 T496361 列队</h1><p class="hero-subtitle">支线剧情 - T496361 列队</p></section>
+    <div class="divider"></div>
+    <section class="section fade-in"><div class="content-body"><h1>T496361 列队</h1>
+
+<blockquote><strong>文档定位</strong>：支线剧情——阶段六（合道）</blockquote>
+<blockquote><strong>历史题目代码</strong>：T496361</blockquote>
+<blockquote><strong>故事角色</strong>：快速集结</blockquote>
+<blockquote><strong>关联主线</strong>：`../06-主线剧情/`</blockquote>
+
+<p>---</p>
+
+<h2>任务背景</h2>
+
+<p>"列队"是阶段六（合道）的快速集结任务。题目描述了一个场景：省队选拔赛即将开始，锦鲤宗需要将所有参赛弟子从各地"快速集结"到比赛场地。但每个弟子的"出发时间"、"交通工具"、"路线"都不同，如何在最短时间内完成"全员集结"？</p>
+
+<p>这道题是"调度问题"的经典应用：需要在多个约束（时间、空间、资源）下，找到"最优调度方案"。</p>
+
+<h2>故事展开</h2>
+
+<p>锦瑟在设计集结方案时，她的"系统思维"让她建立了一个"调度网络"：将每个弟子视为"节点"，将每条路线视为"边"，然后使用"最短路算法"（Dijkstra）计算每个弟子的"最优到达路径"。</p>
+
+<p>但萧鲤提出了一个关键问题："最优路径'不等于'最快到达'。如果一个弟子选择了'最优路径'，但那条路线上有其他弟子也在走，就会导致'拥堵'。"</p>
+
+<p>"你是说'竞争资源'？"锦瑟问。</p>
+
+<p>"是的。"萧鲤说，"交通工具、路线、时间窗口都是'竞争资源'。如果多个弟子选择同一时间、同一路线，就会互相干扰。我们需要'协调'，而不是'各自为战'。"</p>
+
+<p>两人最终设计了一个"协调机制"：先计算每个弟子的"最优路径"，然后检测"冲突"（多个弟子在同一时间使用同一资源），最后通过"调整出发时间"或"更换路线"来消除冲突。</p>
+
+<p>这个方案让锦鲤宗的集结时间比预期缩短了30%。</p>
+
+<h2>修炼感悟</h2>
+
+<p>"列队"教会了两人的"调度思维"：
+<ul><li><strong>最短路</strong>：每个个体的最优路径</li>
+<li><strong>资源竞争</strong>：多个个体的最优路径可能冲突</li>
+<li><strong>协调机制</strong>：通过调整时间和路线，消除冲突，实现全局最优</li>
+</ul>
+<h2>与主线的关联</h2></p>
+
+<p>此任务发生在<strong>第二十五章：合道之战</strong>（省队选拔赛）前夕，是锦瑟、萧鲤、云澈三人团队的第一次"协作任务"。这个经历为后来的"团队配合"奠定了基础。</p>
+
+<p>---</p>
+
+<blockquote><strong>关联阅读</strong>：</blockquote>
+<blockquote>- `../06-主线剧情/01-主线大纲（新）.md` — 主线剧情大纲</blockquote>
+<blockquote>- `../04-功法/01-功法大典总纲.md` — 功法体系</blockquote>
+<blockquote>- `../02-人物/` — 人物档案</blockquote></div></section>
+    <div class="divider"></div>
+    <section class="section fade-in" style="text-align:center;padding:2rem;"><p style="color:var(--text-muted);font-size:0.9rem;"><a href="../index.html" style="color:var(--cyan-primary);text-decoration:none;">返回锦鲤界总览</a></p></section>
+  </div>
+  <script src="../assets/js/koi-world.js"></script>
+</body></html>

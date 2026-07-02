@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>法宝图鉴总纲 — 锦鲤界</title>
+  <link rel="stylesheet" href="../assets/css/koi-world.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="particles-canvas"></canvas>
+  <div class="koi-swim"></div><div class="koi-swim"></div><div class="koi-swim"></div>
+  <nav class="nav-bar">
+    <a href="../index.html" class="nav-logo"><span class="koi-icon">🎏</span><span>锦鲤界</span></a>
+    <ul class="nav-links">
+      <li><a href="../world/index.html">世界观</a></li>
+      <li><a href="../characters/index.html">人物</a></li>
+      <li><a href="../locations/index.html">地点</a></li>
+      <li><a href="../techniques/index.html">功法</a></li>
+      <li><a href="../artifacts/index.html">法宝</a></li>
+      <li><a href="../story/index.html">主线</a></li>
+      <li><a href="../side-stories/index.html">支线</a></li>
+      <li><a href="../philosophy/index.html">理念</a></li>
+    </ul>
+  </nav>
+  <div class="page-container">
+    <div class="breadcrumb"><a href="../index.html">锦鲤界</a> <span class="separator">/</span> <a href="fabao-index.html">法宝</a> <span class="separator">/</span> <span class="current">法宝图鉴总纲</span></div>
+    <section class="hero-section"><h1 class="hero-title">🔮 法宝图鉴总纲</h1><p class="hero-subtitle">法宝 - 法宝图鉴总纲</p></section>
+    <div class="divider"></div>
+    <section class="section fade-in"><div class="content-body"><h1>法宝图鉴总纲</h1>
+
+<blockquote><strong>文档定位</strong>：法宝体系总纲文档，概述锦鲤宗全部法宝（数据结构/工具）的分级、命名规则、覆盖范围。</blockquote>
+<blockquote><strong>版本</strong>：v1.2</blockquote>
+<blockquote><strong>关联文件</strong>：`../02-基础法宝.md`、`../03-进阶法宝.md`、`../04-高阶法宝.md`</blockquote>
+
+<p>---</p>
+
+<h2>一、法宝体系概览</h2>
+
+<h3>1.1 三级法宝体系</h3>
+
+<p>| 法宝级别 | 对应数据结构/工具 | 对应修仙境界 | 法宝数量 | 核心用途 |
+|---------|-----------------|-------------|---------|---------|
+| <strong>基础法宝</strong> | 数组、链表、栈、队列、编译器、OJ平台 | 外门→筑基期 | 约15件 | 日常修炼、基础操作 |
+| <strong>进阶法宝</strong> | 二叉树、哈希表、优先队列、线段树、树状数组 | 元婴→渡劫期 | 约15件 | 高效处理、复杂查询 |
+| <strong>高阶法宝</strong> | 可持久化结构、字典树、KMP、后缀结构、网络流、凸包 | 飞升→至尊期 | 约15件 | 攻克顶级难题 |</p>
+
+<strong>总计</strong>：约45件法宝，覆盖NOI大纲全部数据结构知识点。
+
+<h3>1.2 法宝命名规则</h3>
+
+<ul><li><strong>名称格式</strong>：采用"功能+形态"的命名法，如"XX锁链""XX灵蛇""XX盾""XX镜"等</li>
+<li><strong>外观描述</strong>：每个法宝有具体的视觉形态（如锁链、灵蛇、盾牌、镜子等）</li>
+<li><strong>传说典故</strong>：每个法宝有一段"上古传说"，解释其来历</li>
+<li><strong>功能描述</strong>：对应现实中的数据结构或工具功能</li>
+<li><strong>战争应用</strong>：描述该法宝在对抗硅基人时的具体应用场景</li>
+</ul>
+---
+
+<h2>二、基础法宝总表</h2>
+
+<blockquote><strong>适用境界</strong>：外门→筑基期</blockquote>
+<blockquote><strong>对应现实</strong>：C++基础、STL基础</blockquote>
+
+<p>| 法宝名称 | 对应原型 | 外观描述 | 传说典故 | 功能 | 战争应用 |
+|---------|---------|---------|---------|------|---------|
+| <strong>数组锁链</strong> | 数组 | 一环扣一环的青色锁链，每环可存储一个数值 | 最基础的数据结构，但妙用无穷。可变形为二维锁链网（矩阵）、高维锁链阵 | 连续存储，随机访问 | 存储硅基人的攻击数据序列 |
+| <strong>链表灵蛇</strong> | 链表 | 一条由节点组成的透明灵蛇，每个节点存储数据与指向下一个节点的灵丝 | 插入与删除时无需移动整体，只需重接灵丝。蛇首蛇尾可相连，化为循环灵蛇 | 动态插入删除 | 在动态变化的战场中灵活调整数据关系 |
+| <strong>栈山盾</strong> | 栈 | 一座只能顶端进出的小型灵山峰，后进先出 | 用于回溯、DFS、表达式求值。口诀："后进先出，压栈如山，弹栈如雪崩" | 后进先出，回溯 | 在迷宫逃脱中记录路径以便回溯 |
+| <strong>队列长河</strong> | 队列 | 一条单向流动的灵河，先进入者先流出 | 用于BFS、拓扑排序。口诀："先进先出，排队渡河，公平无二" | 先进先出，排队 | 在弟子列队中组织有序进攻阵型 |
+| <strong>洛谷灵牌</strong> | 洛谷OJ平台 | 一块青玉令牌，正面刻鲤鱼跃龙门图案，背面浮现动态题境列表 | 上古大能"洛谷仙人"所留，是灵码界最大的试炼场入口 | 进入题境，获取试炼 | 进入硅基人设置的题境，获取情报与修炼资源 |
+| <strong>玲珑编译盏</strong> | 编译器/IDE | 一盏青蓝色琉璃灯，灯芯为流动代码。弟子以神识注入，灯即编译运行 | 帮主早年游历代码商号时所铸，能瞬间将人界思维转化为数码界可执行之力 | 编译运行代码 | 将碳基人的思维转化为可执行代码，对抗硅基人的逻辑陷阱 |
+| <strong>万象调试镜</strong> | Debugger | 一面可放大千万倍的青铜古镜，能照见代码运行的每一瞬间 | 可显示变量变化、内存状态、递归路径。高阶弟子以此镜照见"心魔"（Bug）的藏身之处 | 调试代码，查找错误 | 在硅基人的陷阱中找到其隐藏的漏洞 |
+| <strong>代码玉简</strong> | 代码编辑器 | 一卷自动延展的青色玉简，弟子以神识书写，字迹化为发光符文 | 支持语法高亮、自动补全、错误提示。是弟子最基础的随身法宝 | 编写代码 | 承载碳基人的原创代码，是区别于硅基人"模板生成代码"的核心标志 |
+| <strong>防御罗盘</strong> | 监测工具 | 一个可显示灵码界渗透进度的青铜罗盘，指针指向倒计时 | 由天机阁（朱长老）打造，实时显示硅基人的降临进度 | 监测渗透进度 | 让弟子感知危机的紧迫性，激励修炼 |
+| <strong>STL万象容器</strong> | STL容器 | 一套包含多种容器（vector、stack、queue、list）的法宝套装 | 每种容器各有其用，选择适合的容器是修炼的基本功 | 标准容器操作 | 根据场景选择最优容器 |</p>
+
+<p>---</p>
+
+<h2>三、进阶法宝总表</h2>
+
+<blockquote><strong>适用境界</strong>：元婴→渡劫期</blockquote>
+<blockquote><strong>对应现实</strong>：高级数据结构</blockquote>
+
+<p>| 法宝名称 | 对应原型 | 外观描述 | 传说典故 | 功能 | 战争应用 |
+|---------|---------|---------|---------|------|---------|
+| <strong>二叉仙树</strong> | 二叉树 | 一棵以根为顶、左右分叉的灵树，节点如灯笼悬挂 | 可旋转、可平衡（AVL/红黑）。搜索、插入、删除皆在对数时间内完成 | 层次存储，高效搜索 | 高效存储与检索硅基人的攻击模式分类 |
+| <strong>哈希灵瓮</strong> | 哈希表 | 一口可容纳万物、以哈希函数为引的青铜瓮 | 将任意键值通过哈希函数映射到固定位置，实现近似O(1)的存取。需处理"碰撞" | 快速键值查找 | 快速查找硅基人的已知弱点库 |
+| <strong>优先灵钵</strong> | 堆/优先队列 | 一只永远保持最大（或最小）元素在顶端的紫金钵 | 用于贪心、Dijkstra、堆优化。每次取顶端，剩余元素自动调整 | 快速获取极值 | 在资源有限时，优先处理最高威胁 |
+| <strong>并查罗盘</strong> | 并查集 | 一个可显示元素族群关系的青铜罗盘 | 指针指向祖先，路径压缩后所有指针直指根源，查询瞬时完成 | 快速判断族群关系 | 快速判断多个硅基人单位是否属于同一攻击集群 |
+| <strong>线段守望塔</strong> | 线段树 | 一座可分层展开的水晶塔，每层对应一个区间 | 区间查询与修改的终极守望者。配合懒标记可延迟更新，效率极高 | 区间查询与修改 | 实时监测硅基人渗透的区间变化 |
+| <strong>树状灵蕨</strong> | 树状数组 | 一株分层生长的灵蕨，每片叶子管辖一段区间 | 比线段树更轻量，适合单点修改+前缀查询。结构优雅，如蕨类植物的天然分形 | 轻量级区间查询 | 轻量级监测工具，适合外门弟子使用 |
+| <strong>字典Trie树</strong> | Trie | 一棵以字符为路径的字母灵树，从根到叶即为一个单词 | 用于字符串前缀匹配、自动补全。如一本活字典，根为空白，枝为字母 | 字符串前缀匹配 | 破解硅基人的通信协议前缀 |
+| <strong>KMP灵针</strong> | KMP算法 | 一根可在字符串中自动寻找模式的绣花针 | 当出现不匹配时，针不退回起点，而是利用已匹配的部分信息，跳到最佳继续位置 | 高效字符串匹配 | 在硅基人的长字符串陷阱中高效定位关键模式 |
+| <strong>单调灵尺</strong> | 单调栈/单调队列 | 一把始终保持单调的玉尺 | 维护单调序列，可快速获取滑动窗口的极值 | 单调性维护 | 优化滑动窗口问题 |
+| <strong>双端灵桥</strong> | 双端队列/双端栈 | 一座两端皆可通行的灵桥 | 两端皆可进出，灵活多变 | 双向操作 | 处理双向操作问题 |</p>
+
+<p>---</p>
+
+<h2>四、高阶法宝总表</h2>
+
+<blockquote><strong>适用境界</strong>：飞升→至尊期</blockquote>
+<blockquote><strong>对应现实</strong>：高级数据结构、高级算法工具</blockquote>
+
+<p>| 法宝名称 | 对应原型 | 外观描述 | 传说典故 | 功能 | 战争应用 |
+|---------|---------|---------|---------|------|---------|
+| <strong>主席时光殿</strong> | 可持久化线段树 | 一座可分裂出无数历史版本的水晶宫殿 | 每次修改产生新殿，旧殿不毁。可回溯到任意历史时刻查询 | 历史版本查询 | 分析硅基人的进化历史，预测其未来攻击模式 |
+| <strong>后缀轮回盘</strong> | 后缀数组/自动机 | 一个刻满字符串所有后缀的旋转轮盘 | 排序后可通过二分查找任何子串。配合LCP阵列，可解决大量字符串难题 | 子串快速查找 | 全面分析硅基人的所有可能指令组合 |
+| <strong>网络运河图</strong> | 最大流算法 | 一张可动态显示水流的地图，源为高山，汇为大海 | Dinic如分层筑坝，EK如逐条寻路。最小割如切断运河的咽喉 | 最大流/最小割 | 切断硅基人的补给线，或打通我方的情报传输通道 |
+| <strong>凸界天罡罩</strong> | 凸包 | 一个包裹所有散点的半透明光罩，形状为最小凸多边形 | 计算几何的基础法宝，可将复杂问题简化到边界上处理 | 凸包计算 | 在灵码界的三维战场中划定安全区域 |
+| <strong>可持久化字典</strong> | 可持久化Trie | 一本可回溯到任意历史版本的字典 | 每次插入产生新版本，可查询历史状态 | 历史字符串状态 | 追踪硅基人通信协议的历史变化 |
+| <strong>AC猎字符阵</strong> | AC自动机 | 一张可同时追踪多个关键词的猎字符阵 | 多模式匹配，一次遍历识别所有关键词 | 多模式匹配 | 同时识别多种硅基人通信模式 |
+| <strong>LCT灵树</strong> | 动态树（Link-Cut Tree） | 一棵可动态切割和连接的灵树 | 树形结构动态变化，切割连接皆在logarithm | 动态树操作 | 处理动态树形结构的战场变化 |
+| <strong>k维灵树</strong> | k-d树 | 一棵在k维空间中划分区域的灵树 | 在k维空间中高效近邻查询 | 高维空间查询 | 高维空间定位 |
+| <strong>虚灵树</strong> | 虚树 | 一棵提取关键节点构建的虚灵树 | 提取关键节点，化繁为简 | 优化树形问题 | 在大规模树形结构中快速定位关键节点 |
+| <strong>左偏灵堆</strong> | 左偏树 | 一棵以左偏性质维护的可合并堆 | 高效合并堆操作 | 可合并堆 | 高效合并多个优先队列 |</p>
+
+<p>---</p>
+
+<h2>五、新增教学理念法宝</h2>
+
+<p>| 教学理念 | 法宝/心法名称 | 对应原型 | 修仙包装 | 功能 |
+|---------|--------------|---------|---------|------|
+| 祖传原理图 | <strong>内视观气图</strong> | CPU/内存可视化工具 | 弟子通过此图"内观"程序运行时灵气（数据）在体内的流转路径 | 可视化程序运行状态 |
+| 乾坤大挪移 | <strong>时空转换心法</strong> | 时间空间权衡（Time-Space Tradeoff） | 在空间资源和时间资源之间灵活调配，以空间换时间或以时间换空间 | 优化资源分配策略 |
+| 降维打击 | <strong>化繁为简诀</strong> | 分而治之（Divide and Conquer） | 拆解敌人复杂攻势，逐项处理，化整为零，逐一击破 | 降低问题复杂度 |
+| AI辅助学习 | <strong>灵算法宝/AI器灵</strong> | AI辅助工具 | 召唤AI器灵协助分析功法，但需警惕器灵是否被硅基人侵蚀 | 辅助学习与分析 |
+| 费曼学习法 | <strong>讲道心法</strong> | 向他人讲解以加深理解 | 在传经堂向他人讲解功法，检验领悟深度 | 通过教来学 |
+| 集中学习 | <strong>闭关修炼</strong> | 高强度专注学习 | 在闭关洞府进行无干扰的功法修炼 | 专注突破 |
+| PBL项目式学习 | <strong>组队历练</strong> | 团队项目 | 组成小队完成"除魔任务"，综合运用多种功法 | 综合应用 |
+| 翻转课堂 | <strong>先修后讲</strong> | 自学+讨论 | 先自行研读典籍，再到传经堂讨论，长老从讲授者变为引导者 | 自主学习 |</p>
+
+<p>---</p>
+
+<h2>六、法宝编号体系</h2>
+
+<p>| 编号前缀 | 法宝级别 | 对应修仙境界 | 示例 |
+|---------|---------|-------------|------|
+| <strong>A-XXX</strong> | 基础法宝 | 外门→筑基期 | A-001 数组锁链 |
+| <strong>B-XXX</strong> | 进阶法宝 | 元婴→渡劫期 | B-001 二叉仙树 |
+| <strong>C-XXX</strong> | 高阶法宝 | 飞升→至尊期 | C-001 主席时光殿 |
+| <strong>T-XXX</strong> | 教学理念法宝 | 全境界 | T-001 内视观气图 |</p>
+
+<p>---</p>
+
+<h2>七、法宝与修仙境界的对应关系</h2>
+
+<p>| 修仙境界 | 可使用的法宝级别 | 核心法宝 |
+|---------|-----------------|---------|
+| 外门弟子 | A级 | 数组锁链、链表灵蛇、洛谷灵牌 |
+| 筑基期 | A级 | 栈山盾、队列长河、玲珑编译盏 |
+| 元婴期 | A-B级 | 万象调试镜、二叉仙树、哈希灵瓮 |
+| 化神期 | A-B级 | 优先灵钵、并查罗盘、线段守望塔 |
+| 渡劫期 | B级 | 树状灵蕨、字典Trie树、KMP灵针 |
+| 飞升期 | B-C级 | 主席时光殿、后缀轮回盘、网络运河图 |
+| 合道期 | C级 | 凸界天罡罩、可持久化字典、AC猎字符阵 |
+| 大乘期 | C级 | LCT灵树、k维灵树、虚灵树 |
+| 至尊期 | C级 | 所有高阶法宝 + 教学理念法宝 |</p>
+
+<p>---</p>
+
+<blockquote><strong>关联阅读</strong>：</blockquote>
+<blockquote>- `../02-基础法宝.md` — 基础法宝详细描述</blockquote>
+<blockquote>- `../03-进阶法宝.md` — 进阶法宝详细描述</blockquote>
+<blockquote>- `../04-高阶法宝.md` — 高阶法宝详细描述</blockquote>
+<blockquote>- `../../04-功法/01-功法大典总纲.md` — 功法体系总览</blockquote>
+<blockquote>- `../../02-人物/01-宗主/01-灵码真人.md` — 法宝体系设计者</blockquote></div></section>
+    <div class="divider"></div>
+    <section class="section fade-in" style="text-align:center;padding:2rem;"><p style="color:var(--text-muted);font-size:0.9rem;"><a href="../index.html" style="color:var(--cyan-primary);text-decoration:none;">返回锦鲤界总览</a></p></section>
+  </div>
+  <script src="../assets/js/koi-world.js"></script>
+</body></html>

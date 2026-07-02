@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T496365 裂变 — 锦鲤界</title>
+  <link rel="stylesheet" href="../assets/css/koi-world.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <canvas id="particles-canvas"></canvas>
+  <div class="koi-swim"></div><div class="koi-swim"></div><div class="koi-swim"></div>
+  <nav class="nav-bar">
+    <a href="../index.html" class="nav-logo"><span class="koi-icon">🎏</span><span>锦鲤界</span></a>
+    <ul class="nav-links">
+      <li><a href="../world/index.html">世界观</a></li>
+      <li><a href="../characters/index.html">人物</a></li>
+      <li><a href="../locations/index.html">地点</a></li>
+      <li><a href="../techniques/index.html">功法</a></li>
+      <li><a href="../artifacts/index.html">法宝</a></li>
+      <li><a href="../story/index.html">主线</a></li>
+      <li><a href="../side-stories/index.html">支线</a></li>
+      <li><a href="../philosophy/index.html">理念</a></li>
+    </ul>
+  </nav>
+  <div class="page-container">
+    <div class="breadcrumb"><a href="../index.html">锦鲤界</a> <span class="separator">/</span> <a href="zhixianjuqing-index.html">支线剧情</a> <span class="separator">/</span> <span class="current">T496365 裂变</span></div>
+    <section class="hero-section"><h1 class="hero-title">🔍 T496365 裂变</h1><p class="hero-subtitle">支线剧情 - T496365 裂变</p></section>
+    <div class="divider"></div>
+    <section class="section fade-in"><div class="content-body"><h1>T496365 裂变</h1>
+
+<blockquote><strong>文档定位</strong>：支线剧情——阶段六（合道）</blockquote>
+<blockquote><strong>历史题目代码</strong>：T496365</blockquote>
+<blockquote><strong>故事角色</strong>：敌军分析</blockquote>
+<blockquote><strong>关联主线</strong>：`../06-主线剧情/`</blockquote>
+
+<p>---</p>
+
+<h2>任务背景</h2>
+
+<p>"裂变"是阶段六（合道）的敌军分析任务。题目描述了一个场景：硅基人的"代码病毒"具有"裂变"能力——一个病毒可以分裂为多个子病毒，每个子病毒又可以继续分裂。弟子需要分析这种"裂变模式"，预测病毒的"传播速度"和"最终规模"。</p>
+
+<p>这道题是"递归"和"分治"的经典应用：病毒的裂变过程可以用"递归树"建模，然后通过"树形DP"计算最终规模。</p>
+
+<h2>故事展开</h2>
+
+<p>锦瑟在分析这道题时，她的"系统思维"让她迅速建立了"递归模型"：将病毒的裂变过程视为"递归树"，每个节点代表一个病毒，子节点代表分裂后的子病毒。</p>
+
+<p>"但递归模型有一个假设：所有病毒的'分裂能力'是相同的。"锦瑟对冯长老说，"但现实中，不同病毒的'分裂能力'可能不同。我们需要考虑'异质性'。"</p>
+
+<p>冯长老点头："这就是为什么我们需要'树形DP'——每个节点的状态不仅取决于子节点的数量，还取决于子节点的'类型'。"</p>
+
+<p>萧鲤则从"直觉"角度提出了另一个问题："我们为什么要'预测'病毒的最终规模？为什么不'阻止'裂变？"</p>
+
+<p>"你是说'拦截'？"锦瑟问。</p>
+
+<p>"是的。"萧鲤说，"如果我们能在病毒'分裂前'将其消灭，就不需要预测它的最终规模了。关键是要找到'最佳拦截点'——在裂变树中，哪个节点被消灭后，能对整体传播造成最大影响？"</p>
+
+<p>两人最终结合了两个方案：锦瑟的"递归预测"用于"评估威胁等级"，萧鲤的"拦截策略"用于"制定反击计划"。这个方案在省队选拔赛的"模拟战"中被验证有效——三人团队成功"拦截"了硅基人的裂变病毒网络。</p>
+
+<h2>修炼感悟</h2>
+
+<p>"裂变"教会了两人的"敌军分析"：
+<ul><li><strong>递归建模</strong>：将复杂过程分解为递归结构</li>
+<li><strong>异质性</strong>：不同节点的属性可能不同，需要个性化分析</li>
+<li><strong>拦截策略</strong>：不是被动预测，而是主动拦截——找到最关键的节点</li>
+</ul>
+<h2>与主线的关联</h2></p>
+
+<p>此任务发生在<strong>第二十五章：合道之战</strong>（省队选拔赛）期间，是锦瑟、萧鲤、云澈三人团队的"敌军分析项目"。这个经历让她们理解了"团队作战不仅是个人能力的叠加，更是策略的协同"。</p>
+
+<p>---</p>
+
+<blockquote><strong>关联阅读</strong>：</blockquote>
+<blockquote>- `../06-主线剧情/01-主线大纲（新）.md` — 主线剧情大纲</blockquote>
+<blockquote>- `../04-功法/01-功法大典总纲.md` — 功法体系</blockquote>
+<blockquote>- `../02-人物/` — 人物档案</blockquote></div></section>
+    <div class="divider"></div>
+    <section class="section fade-in" style="text-align:center;padding:2rem;"><p style="color:var(--text-muted);font-size:0.9rem;"><a href="../index.html" style="color:var(--cyan-primary);text-decoration:none;">返回锦鲤界总览</a></p></section>
+  </div>
+  <script src="../assets/js/koi-world.js"></script>
+</body></html>
