@@ -773,3 +773,71 @@ code {
   0%, 100% { opacity: 0.3; }
   50% { opacity: 0.8; }
 }
+
+/* ===== 章节悬浮导航 ===== */
+.chapter-nav {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  z-index: 100;
+  padding: 12px 24px;
+  background: rgba(18, 24, 48, 0.9);
+  border: 1px solid var(--border-glow);
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 40px rgba(0, 240, 255, 0.15), 0 0 0 1px rgba(0, 240, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.chapter-nav:hover {
+  box-shadow: 0 15px 50px rgba(0, 240, 255, 0.25), 0 0 0 1px rgba(0, 240, 255, 0.2);
+}
+
+.chapter-nav a,
+.chapter-nav span {
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+}
+
+.chapter-nav a:hover {
+  color: var(--cyan-primary);
+  background: rgba(0, 240, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+.chapter-nav span.disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.chapter-nav .prev-btn::before {
+  content: "←";
+}
+
+.chapter-nav .next-btn::after {
+  content: "→";
+}
+
+@media (max-width: 768px) {
+  .chapter-nav {
+    padding: 8px 16px;
+    gap: 10px;
+    bottom: 20px;
+  }
+  .chapter-nav a,
+  .chapter-nav span {
+    padding: 6px 14px;
+    font-size: 0.85rem;
+  }
+}
