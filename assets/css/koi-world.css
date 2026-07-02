@@ -87,9 +87,14 @@ body::after {
 }
 
 .koi-swim::before {
-  content: "🎏";
-  font-size: 80px;
+  content: "";
   position: absolute;
+  width: 80px;
+  height: 40px;
+  background-image: url('../images/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   animation: koiFloat 20s ease-in-out infinite;
 }
 
@@ -157,8 +162,16 @@ body::after {
 }
 
 .nav-logo .koi-icon {
-  font-size: 2rem;
+  width: 2rem;
+  height: 2rem;
+  display: inline-block;
+  background-image: url('../images/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  vertical-align: middle;
   animation: koiWiggle 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px var(--gold-glow));
 }
 
 @keyframes koiWiggle {
